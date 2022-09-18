@@ -317,12 +317,72 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#knn-k-nearest-neighbors">
+   <em>
+    KNN (K-Nearest Neighbors)
+   </em>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pengertian-knn">
+     Pengertian KNN
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cara-kerja-knn">
+     Cara Kerja KNN
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rumus-yang-digunakan-menghitung-knn">
+     Rumus yang digunakan menghitung KNN
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#implementasi-knn">
+     Implementasi KNN
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#langkah-1-impor-data-yang-diperlukan-dan-periksa-fitur-fiturnya">
+       Langkah 1 : Impor data yang diperlukan dan periksa fitur-fiturnya.
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#langkah-2-pisahkan-data-dan-latih-modelnya">
+       Langkah 2 : Pisahkan data dan Latih Modelnya.
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -334,6 +394,55 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#knn-k-nearest-neighbors">
+   <em>
+    KNN (K-Nearest Neighbors)
+   </em>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pengertian-knn">
+     Pengertian KNN
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cara-kerja-knn">
+     Cara Kerja KNN
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rumus-yang-digunakan-menghitung-knn">
+     Rumus yang digunakan menghitung KNN
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#implementasi-knn">
+     Implementasi KNN
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#langkah-1-impor-data-yang-diperlukan-dan-periksa-fitur-fiturnya">
+       Langkah 1 : Impor data yang diperlukan dan periksa fitur-fiturnya.
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#langkah-2-pisahkan-data-dan-latih-modelnya">
+       Langkah 2 : Pisahkan data dan Latih Modelnya.
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -341,19 +450,47 @@ title="Print to PDF"
                 
               <div>
                 
-  <section id="tugas-3">
+  <section class="tex2jax_ignore mathjax_ignore" id="tugas-3">
 <h1>Tugas 3<a class="headerlink" href="#tugas-3" title="Permalink to this headline">#</a></h1>
-<p><em>KNN (K-Nearest Neighbors)</em></p>
+<section id="knn-k-nearest-neighbors">
+<h2><em>KNN (K-Nearest Neighbors)</em><a class="headerlink" href="#knn-k-nearest-neighbors" title="Permalink to this headline">#</a></h2>
+<section id="pengertian-knn">
+<h3>Pengertian KNN<a class="headerlink" href="#pengertian-knn" title="Permalink to this headline">#</a></h3>
+<p>Algoritma k-Nearest Neighbor adalah algoritma supervised
+learning dimana hasil dari instance yang baru diklasifikasikan berdasarkan mayoritas dari kategori k-tetangga terdekat.</p>
+<p>Tujuan dari algoritma ini adalah untuk mengklasifikasikan obyek baru berdasarkan atribut dan sample-sample dari training data.</p>
+</section>
+<section id="cara-kerja-knn">
+<h3>Cara Kerja KNN<a class="headerlink" href="#cara-kerja-knn" title="Permalink to this headline">#</a></h3>
+<p>Algoritma k-Nearest Neighbor menggunakan Neighborhood Classification sebagai nilai prediksi dari nilai instance yang baru. Adapun cara kerja dari algoritma K-NN yaitu :</p>
+<ol class="simple">
+<li><p>Tentukan jumlah tetangga yg akan dilakukan perhitungkan (k), misalnya kita tentukan 3 tetangga terdekat (k = 3).</p></li>
+<li><p>hitung jarak setiap tetangga terhadap rumah tersebut, lalu urutkan hasilnya berdasarkan jarak, mulai dari yang terkecil ke yang terbesar.</p></li>
+<li><p>ambil 3 (k) tetangga yg paling dekat, lalu tentukan kelas dari data baru tersebut sesuai dengan tetangga terdekatnya.</p></li>
+</ol>
+</section>
+<section id="rumus-yang-digunakan-menghitung-knn">
+<h3>Rumus yang digunakan menghitung KNN<a class="headerlink" href="#rumus-yang-digunakan-menghitung-knn" title="Permalink to this headline">#</a></h3>
+<p>Adapun rumus yang digunakan untuk menghitung bobot kemiripan (<em>similarity</em>) dengan <em>Nearest Neighbor</em> menggunakan rumus <em>Euclidean</em>.</p>
+<p><img alt="image.png" src="https://cdn.mathpix.com/snip/images/G6AE0sijfP7MIP3eoonemtiOPf_I2H44TRZB0YImECk.original.fullsize.png" /></p>
+</section>
+<section id="implementasi-knn">
+<h3>Implementasi KNN<a class="headerlink" href="#implementasi-knn" title="Permalink to this headline">#</a></h3>
+<section id="langkah-1-impor-data-yang-diperlukan-dan-periksa-fitur-fiturnya">
+<h4>Langkah 1 : Impor data yang diperlukan dan periksa fitur-fiturnya.<a class="headerlink" href="#langkah-1-impor-data-yang-diperlukan-dan-periksa-fitur-fiturnya" title="Permalink to this headline">#</a></h4>
+<p>Impor fungsi load_iris dari modul set data scikit-learen dan buat objek iris Bunch (bunch adalah tipe objek khusus scikitlearn untuk menyimpan set data dan atributnya).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_iris</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Import the load_iris fungction from datsets module</span>
+<span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_iris</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">iris</span><span class="o">=</span><span class="n">load_iris</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Create bunch object containing iris dataset and its attributes</span>
+<span class="n">iris</span><span class="o">=</span><span class="n">load_iris</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -372,7 +509,8 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">iris</span><span class="o">.</span><span class="n">data</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Print the iris data</span>
+<span class="n">iris</span><span class="o">.</span><span class="n">data</span>
 </pre></div>
 </div>
 </div>
@@ -531,9 +669,11 @@ title="Print to PDF"
 </div>
 </div>
 </div>
+<p>Setiap pengamatan mewakili satu bunga dan 4 kolom mewakili 4 pengukuran. Kita dapat melihat fitur (ukuran) di bawah atribut ‘data’, sedangkan label di bawah ‘fitur_nama’. Seperti yang dapat kita lihat di bawah, label/respons dikodekan sebagai 0,1 dan 2. Karena fitur dan repose harus numerik (Numpy arrays) untuk model scikit-learn dan mereka harus memiliki bentuk tertentu.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">feature_names</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#names of 4 features (column names_)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">feature_names</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -545,7 +685,8 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">target</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#integers representing the species: 0 = setosa, 1=versicolor, 2=virginica</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">target</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -588,7 +729,8 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># we have a total of 150 observations and 4 features</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -598,17 +740,40 @@ title="Print to PDF"
 </div>
 </div>
 </div>
+<p>Melakukan pendefinisian variable x dan y</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">data</span>
-<span class="n">y</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">target</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Feature matrix in a object named X</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span>
+<span class="c1"># response vector in a object named y</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">target</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(150, 4)
+(150,)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="langkah-2-pisahkan-data-dan-latih-modelnya">
+<h4>Langkah 2 : Pisahkan data dan Latih Modelnya.<a class="headerlink" href="#langkah-2-pisahkan-data-dan-latih-modelnya" title="Permalink to this headline">#</a></h4>
+<p>Pelatihan dan pengujian pada data yang sama bukanlah pendekatan yang optimal, jadi kami membagi data menjadi dua bagian, set pelatihan dan set pengujian. Kami menggunakan fungsi ‘train_test_split’ untuk membagi data. Parameter opsional ‘test-size’ menentukan persentase pemisahan. Parameter ‘random_state’ membuat data dibagi dengan cara yang sama setiap kali Anda menjalankan. Karena kami melatih dan menguji pada kumpulan data yang berbeda, akurasi pengujian yang dihasilkan akan menjadi perkiraan yang lebih baik tentang seberapa baik kemungkinan model untuk tampil pada data yang tidak terlihat.</p>
+<p>Mengambil data latih dan data uji</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># splitting the data into training and test sets (80:20)</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
 <span class="n">X_train</span><span class="p">,</span><span class="n">X_test</span><span class="p">,</span><span class="n">y_train</span><span class="p">,</span><span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -616,7 +781,8 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#shape of train and test objects</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">X_test</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -630,7 +796,8 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">y_train</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># shape of new y objects</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">y_train</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -642,14 +809,29 @@ title="Print to PDF"
 </div>
 </div>
 </div>
+<p>Melkukan Import library KNeighborsClassifier dari sklearn</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import the KNeighborsClassifier class from sklearn</span>
 <span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
-
-<span class="c1">#import metrics model to check the accuracy </span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Melakukan import model matriks untuk mengecek tingkat keakuratannya</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import metrics model to check the accuracy</span>
 <span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">metrics</span>
-<span class="c1">#Try running from k=1 through 25 and record testing accuracy</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Dalam contoh kami, kami membuat instance (‘knn’ ) dari kelas ‘KNeighborsClassifer’, dengan kata lain kami telah membuat objek yang disebut ‘knn’ yang tahu bagaimana melakukan klasifikasi KNN setelah kami memberikan data. Parameter ‘n_neighbors’ adalah parameter tuning/parameter hyper (k) . Semua parameter lainnya diatur ke nilai default.</p>
+<p>Metode ‘fit’ digunakan untuk melatih model pada data training (X_train,y_train) dan metode ‘predict’ untuk melakukan pengujian pada data testing (X_test). Memilih nilai K yang optimal sangat penting, jadi kami menyesuaikan dan menguji model untuk nilai yang berbeda untuk K (dari 1 hingga 25) menggunakan for loop dan mencatat akurasi pengujian KNN dalam variabel (skor).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Try running from k=1 through 25 and record testing accuracy</span>
 <span class="n">k_range</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">26</span><span class="p">)</span>
 <span class="n">scores</span> <span class="o">=</span> <span class="p">{}</span>
 <span class="n">scores_list</span> <span class="o">=</span> <span class="p">[]</span>
@@ -663,6 +845,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
+<p>Testing accuracy for each value of K</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">scores</span>
@@ -699,6 +882,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
+<p>Plot hubungan antara nilai K dan akurasi pengujian yang sesuai menggunakan pustaka matplotlib.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
@@ -715,9 +899,11 @@ title="Print to PDF"
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Testing Accuracy&#39;)
 </pre></div>
 </div>
-<img alt="_images/Tugas-3_16_1.png" src="_images/Tugas-3_16_1.png" />
+<img alt="_images/Tugas-3_38_1.png" src="_images/Tugas-3_38_1.png" />
 </div>
 </div>
+<p>Seperti yang dapat kita lihat, ada kenaikan dan penurunan dalam akurasi dan itu cukup khas ketika memeriksa kompleksitas model dengan akurasi. Secara umum seiring dengan kenaikan nilai K tampaknya ada peningkatan akurasi dan lagi-lagi turun.</p>
+<p>Untuk model akhir kami, kami dapat memilih nilai optimal K sebagai 5 (yang berada di antara 3 dan 19) dan melatih kembali model dengan semua data yang tersedia. Dan itu akan menjadi model terakhir kami yang siap untuk membuat prediksi.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#K=5</span>
@@ -732,6 +918,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
+<p>Melakukan percobaan untuk mencari spesies yang di sesuaikan dengan data baru yang telah di inputkan</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#0 = setosa, 1=versicolor, 2=virginica</span>
@@ -755,6 +942,9 @@ setosa
 </div>
 </div>
 </div>
+</section>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
