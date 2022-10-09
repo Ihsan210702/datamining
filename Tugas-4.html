@@ -144,13 +144,6 @@ const thebe_selector_output = ".output, .cell_output"
    Tugas 5
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Tugas-6.html">
-   <strong>
-    DECISION TREE
-   </strong>
-  </a>
- </li>
 </ul>
 
     </div>
@@ -358,14 +351,16 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#persiapan-lingkungan">
-   Persiapan Lingkungan
+  <a class="reference internal nav-link" href="#implementasi-naive-bayes">
+   Implementasi Naive Bayes
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#hitung-data">
-   Hitung Data
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hitung-data">
+     Hitung Data
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -387,14 +382,16 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#persiapan-lingkungan">
-   Persiapan Lingkungan
+  <a class="reference internal nav-link" href="#implementasi-naive-bayes">
+   Implementasi Naive Bayes
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#hitung-data">
-   Hitung Data
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hitung-data">
+     Hitung Data
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -409,12 +406,9 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="tugas-4">
 <h1>Tugas 4<a class="headerlink" href="#tugas-4" title="Permalink to this headline">#</a></h1>
 <p><strong>NAIVE BAYES</strong></p>
-<ol class="simple">
-<li><p>Baca data bunga <em>iris</em></p></li>
-<li><p>Implementasi algoritma Naive Bayes Gaussian untuk menentukan probabilitas kelas dari data tes</p></li>
-</ol>
-<section id="persiapan-lingkungan">
-<h2>Persiapan Lingkungan<a class="headerlink" href="#persiapan-lingkungan" title="Permalink to this headline">#</a></h2>
+<p>Algoritma Naive Bayes merupakan sebuah metoda klasifikasi menggunakan metode probabilitas dan statistik yg dikemukakan oleh ilmuwan Inggris Thomas Bayes. Algoritma Naive Bayes memprediksi peluang di masa depan berdasarkan pengalaman di masa sebelumnya sehingga dikenal sebagai Teorema Bayes.</p>
+<section id="implementasi-naive-bayes">
+<h2>Implementasi Naive Bayes<a class="headerlink" href="#implementasi-naive-bayes" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Impor <em>train_test_split</em> dari <em>sklearn</em></p></li>
 <li><p>Impor <em>KNeighborsClassifier</em> dari <em>sklearn</em></p></li>
@@ -477,7 +471,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-992b4cfb-5ef1-4a41-a31e-eecb56174ad9">
+  <div id="df-e30a6095-bfed-42fb-b3a2-723d3ce398dc">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -548,7 +542,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-992b4cfb-5ef1-4a41-a31e-eecb56174ad9')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-e30a6095-bfed-42fb-b3a2-723d3ce398dc')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -599,12 +593,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-992b4cfb-5ef1-4a41-a31e-eecb56174ad9 button.colab-df-convert');
+          document.querySelector('#df-e30a6095-bfed-42fb-b3a2-723d3ce398dc button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-992b4cfb-5ef1-4a41-a31e-eecb56174ad9');
+          const element = document.querySelector('#df-e30a6095-bfed-42fb-b3a2-723d3ce398dc');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -638,9 +632,8 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-</section>
 <section id="hitung-data">
-<h2>Hitung Data<a class="headerlink" href="#hitung-data" title="Permalink to this headline">#</a></h2>
+<h3>Hitung Data<a class="headerlink" href="#hitung-data" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>Pisahkan kolom “variety” dari <em>dataframe</em></p></li>
 <li><p>Ambil kolom “variety” sebagai target kolom untuk kategori kelas</p></li>
@@ -669,7 +662,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-63fda1f2-d124-47ba-a1fe-40410a25018f">
+  <div id="df-c0d146e2-d76e-4689-982a-3c1767881944">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -734,7 +727,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-63fda1f2-d124-47ba-a1fe-40410a25018f')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-c0d146e2-d76e-4689-982a-3c1767881944')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -785,12 +778,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-63fda1f2-d124-47ba-a1fe-40410a25018f button.colab-df-convert');
+          document.querySelector('#df-c0d146e2-d76e-4689-982a-3c1767881944 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-63fda1f2-d124-47ba-a1fe-40410a25018f');
+          const element = document.querySelector('#df-c0d146e2-d76e-4689-982a-3c1767881944');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -925,6 +918,7 @@ f1-score_random_Forest : 1.000
 </div>
 </div>
 </div>
+</section>
 </section>
 </section>
 
