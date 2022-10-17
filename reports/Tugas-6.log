@@ -17,21 +17,31 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-from sklearn.datasets import load_iris
-x,y =load_iris(return_X_y=True)
+from sklearn.datasets import df
+x,y = df(return_X_y=True)
 
 print(f'Dimensi Feature: {X.shape}')
 print(f'Class: {set(y)}')
 ------------------
 
 [0;31m[0m
-[0;31mNameError[0mTraceback (most recent call last)
-[0;32m<ipython-input-2-4b45de9c6f39>[0m in [0;36m<module>[0;34m[0m
-[1;32m      2[0m [0mx[0m[0;34m,[0m[0my[0m [0;34m=[0m[0mload_iris[0m[0;34m([0m[0mreturn_X_y[0m[0;34m=[0m[0;32mTrue[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;31mImportError[0mTraceback (most recent call last)
+[0;32m<ipython-input-4-b4374a4f104b>[0m in [0;36m<module>[0;34m[0m
+[0;32m----> 1[0;31m [0;32mfrom[0m [0msklearn[0m[0;34m.[0m[0mdatasets[0m [0;32mimport[0m [0mdf[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      2[0m [0mx[0m[0;34m,[0m[0my[0m [0;34m=[0m [0mdf[0m[0;34m([0m[0mreturn_X_y[0m[0;34m=[0m[0;32mTrue[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 [1;32m      3[0m [0;34m[0m[0m
-[0;32m----> 4[0;31m [0mprint[0m[0;34m([0m[0;34mf'Dimensi Feature: {X.shape}'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m      5[0m [0mprint[0m[0;34m([0m[0;34mf'Class: {set(y)}'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      4[0m [0mprint[0m[0;34m([0m[0;34mf'Dimensi Feature: {X.shape}'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      5[0m [0mprint[0m[0;34m([0m[0;34mf'Class: {set(y)}'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 
-[0;31mNameError[0m: name 'X' is not defined
-NameError: name 'X' is not defined
+[0;31mImportError[0m: cannot import name 'df' from 'sklearn.datasets' (/usr/local/lib/python3.7/dist-packages/sklearn/datasets/__init__.py)
+
+[0;31m---------------------------------------------------------------------------[0;32m
+NOTE: If your import is failing due to a missing package, you can
+manually install dependencies using either !pip or !apt.
+
+To view examples of installing some common dependencies, click the
+"Open Examples" button below.
+[0;31m---------------------------------------------------------------------------[0m
+
+ImportError: cannot import name 'df' from 'sklearn.datasets' (/usr/local/lib/python3.7/dist-packages/sklearn/datasets/__init__.py)
 
