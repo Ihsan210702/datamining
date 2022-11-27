@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Tugas 6 (Decision Tree) &#8212; Fajrul Ihsan Kamil</title>
+    <title>&lt;no title&gt; &#8212; Fajrul Ihsan Kamil</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="UTS" href="UTS.html" />
-    <link rel="prev" title="Tugas 5 (K-Means)" href="Tugas-5.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -118,7 +116,7 @@ const thebe_selector_output = ".output, .cell_output"
   TUGAS
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas-1.html">
    <strong>
@@ -154,8 +152,8 @@ const thebe_selector_output = ".output, .cell_output"
    </strong>
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Tugas-6.html">
    <strong>
     Tugas 6 (Decision Tree)
    </strong>
@@ -241,7 +239,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://colab.research.google.com/github/Ihsan210702/datamining/blob/gh-pages/_sources/Tugas-6.ipynb"
+        <a href="https://colab.research.google.com/github/Ihsan210702/datamining/blob/gh-pages/_sources/bagging.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -301,7 +299,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/Ihsan210702/datamining/issues/new?title=Issue%20on%20page%20%2FTugas-6.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/Ihsan210702/datamining/issues/new?title=Issue%20on%20page%20%2Fbagging.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -329,7 +327,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/Tugas-6.ipynb"
+        <a href="_sources/bagging.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -387,35 +385,7 @@ title="Print to PDF"
         <i class="fas fa-list"></i> Contents
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pengertian">
-   <strong>
-    Pengertian
-   </strong>
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#algoritma-decision-tree">
-   <strong>
-    Algoritma Decision Tree
-   </strong>
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#kerja-algoritma-decision-tree">
-   <strong>
-    Kerja Algoritma Decision Tree
-   </strong>
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#implementasi-decision-tree">
-   <strong>
-    Implementasi Decision Tree
-   </strong>
-  </a>
- </li>
+        <ul class="simple visible nav section-nav flex-column">
 </ul>
 
     </nav>
@@ -425,7 +395,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Tugas 6 (Decision Tree)</h1>
+                <h1><no title></h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -434,35 +404,7 @@ title="Print to PDF"
                             <h2> Contents </h2>
                         </div>
                         <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pengertian">
-   <strong>
-    Pengertian
-   </strong>
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#algoritma-decision-tree">
-   <strong>
-    Algoritma Decision Tree
-   </strong>
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#kerja-algoritma-decision-tree">
-   <strong>
-    Kerja Algoritma Decision Tree
-   </strong>
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#implementasi-decision-tree">
-   <strong>
-    Implementasi Decision Tree
-   </strong>
-  </a>
- </li>
+                            <ul class="simple visible nav section-nav flex-column">
 </ul>
 
                         </nav>
@@ -473,58 +415,43 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="tugas-6-decision-tree">
-<h1><strong>Tugas 6 (Decision Tree)</strong><a class="headerlink" href="#tugas-6-decision-tree" title="Permalink to this headline">#</a></h1>
-<p><strong>DECISION TREE</strong></p>
-<section id="pengertian">
-<h2><strong>Pengertian</strong><a class="headerlink" href="#pengertian" title="Permalink to this headline">#</a></h2>
-<p>Decision tree merupakan metode non parametrik yang digunakan untuk klasifikasi dan regresi. Tujuan dari decision tree adalah membuat model yang memprediksi nilai variabel target dengan mengikuti aturan keputusan sederhana dari fitur data yang tersedia</p>
-</section>
-<section id="algoritma-decision-tree">
-<h2><strong>Algoritma Decision Tree</strong><a class="headerlink" href="#algoritma-decision-tree" title="Permalink to this headline">#</a></h2>
-<ul class="simple">
-<li><p>Decision Tree adalah jenis white box algoritma dalam machine learning yang
-menggunakan internal decision making logic. Hal ini tidak terdapat dapat pada jenis black box algoritma yaitu neural network. Waktu pengambilan data training decision tree lebih cepat dibandingkan Neural Network.</p></li>
-<li><p>Fungsi Kompleksitas Decision Tree adalah fungsi dari jumlah yang records serta atribut dalam data yang diberikan.</p></li>
-</ul>
-</section>
-<section id="kerja-algoritma-decision-tree">
-<h2><strong>Kerja Algoritma Decision Tree</strong><a class="headerlink" href="#kerja-algoritma-decision-tree" title="Permalink to this headline">#</a></h2>
-<ul class="simple">
-<li><p>Memilih atribut terbaik menggunakan Attribution Selection Measures (ASM) untuk membagi records data</p></li>
-<li><p>Membuat atribut menjadi decision node dan memecah dataset menjadi subsets yang lebih kecil.</p></li>
-<li><p>Mulai membangun pohon dengan mengulangi proses ini secara rekursif, untuk setiap cabang sampai salah satu dari kondisi tersebut akan cocok</p></li>
-</ul>
-<p><img alt="original image" src="https://cdn.mathpix.com/snip/images/ADAC9uCjsnrU9p6C0YVz5uw86VBsie6bYW88Nbp6BUQ.original.fullsize.png" /></p>
-</section>
-<section id="implementasi-decision-tree">
-<h2><strong>Implementasi Decision Tree</strong><a class="headerlink" href="#implementasi-decision-tree" title="Permalink to this headline">#</a></h2>
-<div class="cell docutils container">
+  <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>  
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>  
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">sklearn</span> <span class="k">as</span> <span class="nn">sk</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">time</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset_url</span> <span class="o">=</span> <span class="s2">&quot;https://gist.githubusercontent.com/netj/8836201/raw/6f9306ad21398ea43cba4f7d537619d0e07d5ae3/iris.csv&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">cd</span> /content/drive/MyDrive/datamining/tugas
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/content/drive/MyDrive/datamining/tugas
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">dataset_url</span><span class="p">)</span>
-<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.io</span> <span class="kn">import</span> <span class="n">arff</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">arff</span><span class="o">.</span><span class="n">loadarff</span><span class="p">(</span><span class="s1">&#39;messidor_features.arff&#39;</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="n">df</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-c68e1587-664b-4516-949e-f892c90f00f4">
+  <div id="df-86390b97-502e-4ecd-9bd4-9e5428f5e36d">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -544,58 +471,287 @@ menggunakan internal decision making logic. Hal ini tidak terdapat dapat pada je
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>sepal.length</th>
-      <th>sepal.width</th>
-      <th>petal.length</th>
-      <th>petal.width</th>
-      <th>variety</th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>10</th>
+      <th>11</th>
+      <th>12</th>
+      <th>13</th>
+      <th>14</th>
+      <th>15</th>
+      <th>16</th>
+      <th>17</th>
+      <th>18</th>
+      <th>Class</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>5.1</td>
-      <td>3.5</td>
-      <td>1.4</td>
-      <td>0.2</td>
-      <td>Setosa</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>22.0</td>
+      <td>22.0</td>
+      <td>22.0</td>
+      <td>19.0</td>
+      <td>18.0</td>
+      <td>14.0</td>
+      <td>49.895756</td>
+      <td>17.775994</td>
+      <td>5.270920</td>
+      <td>0.771761</td>
+      <td>0.018632</td>
+      <td>0.006864</td>
+      <td>0.003923</td>
+      <td>0.003923</td>
+      <td>0.486903</td>
+      <td>0.100025</td>
+      <td>1.0</td>
+      <td>b'0'</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>4.9</td>
-      <td>3.0</td>
-      <td>1.4</td>
-      <td>0.2</td>
-      <td>Setosa</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>24.0</td>
+      <td>24.0</td>
+      <td>22.0</td>
+      <td>18.0</td>
+      <td>16.0</td>
+      <td>13.0</td>
+      <td>57.709936</td>
+      <td>23.799994</td>
+      <td>3.325423</td>
+      <td>0.234185</td>
+      <td>0.003903</td>
+      <td>0.003903</td>
+      <td>0.003903</td>
+      <td>0.003903</td>
+      <td>0.520908</td>
+      <td>0.144414</td>
+      <td>0.0</td>
+      <td>b'0'</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>4.7</td>
-      <td>3.2</td>
-      <td>1.3</td>
-      <td>0.2</td>
-      <td>Setosa</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>62.0</td>
+      <td>60.0</td>
+      <td>59.0</td>
+      <td>54.0</td>
+      <td>47.0</td>
+      <td>33.0</td>
+      <td>55.831441</td>
+      <td>27.993933</td>
+      <td>12.687485</td>
+      <td>4.852282</td>
+      <td>1.393889</td>
+      <td>0.373252</td>
+      <td>0.041817</td>
+      <td>0.007744</td>
+      <td>0.530904</td>
+      <td>0.128548</td>
+      <td>0.0</td>
+      <td>b'1'</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>4.6</td>
-      <td>3.1</td>
-      <td>1.5</td>
-      <td>0.2</td>
-      <td>Setosa</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>55.0</td>
+      <td>53.0</td>
+      <td>53.0</td>
+      <td>50.0</td>
+      <td>43.0</td>
+      <td>31.0</td>
+      <td>40.467228</td>
+      <td>18.445954</td>
+      <td>9.118901</td>
+      <td>3.079428</td>
+      <td>0.840261</td>
+      <td>0.272434</td>
+      <td>0.007653</td>
+      <td>0.001531</td>
+      <td>0.483284</td>
+      <td>0.114790</td>
+      <td>0.0</td>
+      <td>b'0'</td>
     </tr>
     <tr>
       <th>4</th>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>44.0</td>
+      <td>44.0</td>
+      <td>44.0</td>
+      <td>41.0</td>
+      <td>39.0</td>
+      <td>27.0</td>
+      <td>18.026254</td>
+      <td>8.570709</td>
+      <td>0.410381</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.475935</td>
+      <td>0.123572</td>
+      <td>0.0</td>
+      <td>b'1'</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1146</th>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>34.0</td>
+      <td>34.0</td>
+      <td>34.0</td>
+      <td>33.0</td>
+      <td>31.0</td>
+      <td>24.0</td>
+      <td>6.071765</td>
+      <td>0.937472</td>
+      <td>0.031145</td>
+      <td>0.003115</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.537470</td>
+      <td>0.116795</td>
+      <td>0.0</td>
+      <td>b'0'</td>
+    </tr>
+    <tr>
+      <th>1147</th>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>49.0</td>
+      <td>49.0</td>
+      <td>49.0</td>
+      <td>49.0</td>
+      <td>45.0</td>
+      <td>37.0</td>
+      <td>63.197145</td>
+      <td>27.377668</td>
+      <td>8.067688</td>
+      <td>0.979548</td>
+      <td>0.001552</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.516733</td>
+      <td>0.124190</td>
+      <td>0.0</td>
+      <td>b'0'</td>
+    </tr>
+    <tr>
+      <th>1148</th>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>49.0</td>
+      <td>48.0</td>
+      <td>48.0</td>
+      <td>45.0</td>
+      <td>43.0</td>
+      <td>33.0</td>
+      <td>30.461898</td>
+      <td>13.966980</td>
+      <td>1.763305</td>
+      <td>0.137858</td>
+      <td>0.011221</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.560632</td>
+      <td>0.129843</td>
+      <td>0.0</td>
+      <td>b'0'</td>
+    </tr>
+    <tr>
+      <th>1149</th>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>39.0</td>
+      <td>36.0</td>
+      <td>29.0</td>
+      <td>23.0</td>
+      <td>13.0</td>
+      <td>7.0</td>
+      <td>40.525739</td>
+      <td>12.604947</td>
+      <td>4.740919</td>
+      <td>1.077570</td>
+      <td>0.563518</td>
+      <td>0.326860</td>
+      <td>0.239568</td>
+      <td>0.174584</td>
+      <td>0.485972</td>
+      <td>0.106690</td>
+      <td>1.0</td>
+      <td>b'1'</td>
+    </tr>
+    <tr>
+      <th>1150</th>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>7.0</td>
+      <td>7.0</td>
+      <td>7.0</td>
+      <td>7.0</td>
+      <td>7.0</td>
       <td>5.0</td>
-      <td>3.6</td>
-      <td>1.4</td>
-      <td>0.2</td>
-      <td>Setosa</td>
+      <td>69.423565</td>
+      <td>7.031843</td>
+      <td>1.750548</td>
+      <td>0.046597</td>
+      <td>0.021180</td>
+      <td>0.008472</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.556192</td>
+      <td>0.088957</td>
+      <td>0.0</td>
+      <td>b'0'</td>
     </tr>
   </tbody>
 </table>
+<p>1151 rows × 20 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-c68e1587-664b-4516-949e-f892c90f00f4')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-86390b97-502e-4ecd-9bd4-9e5428f5e36d')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -646,12 +802,12 @@ menggunakan internal decision making logic. Hal ini tidak terdapat dapat pada je
 
       <script>
         const buttonEl =
-          document.querySelector('#df-c68e1587-664b-4516-949e-f892c90f00f4 button.colab-df-convert');
+          document.querySelector('#df-86390b97-502e-4ecd-9bd4-9e5428f5e36d button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-c68e1587-664b-4516-949e-f892c90f00f4');
+          const element = document.querySelector('#df-86390b97-502e-4ecd-9bd4-9e5428f5e36d');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -672,89 +828,6 @@ menggunakan internal decision making logic. Hal ini tidak terdapat dapat pada je
   </div>
 </div></div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">df</span>
-<span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">(</span><span class="n">return_X_y</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Dimensi Feature: </span><span class="si">{</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Class: </span><span class="si">{</span><span class="nb">set</span><span class="p">(</span><span class="n">y</span><span class="p">)</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">ImportError</span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">4</span><span class="o">-</span><span class="n">b4374a4f104b</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">df</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">(</span><span class="n">return_X_y</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> 
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Dimensi Feature: </span><span class="si">{</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Class: </span><span class="si">{</span><span class="nb">set</span><span class="p">(</span><span class="n">y</span><span class="p">)</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-
-<span class="ne">ImportError</span>: cannot import name &#39;df&#39; from &#39;sklearn.datasets&#39; (/usr/local/lib/python3.7/dist-packages/sklearn/datasets/__init__.py)
-
-<span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NOTE</span>: If your import is failing due to a missing package, you can
-<span class="n">manually</span> <span class="n">install</span> <span class="n">dependencies</span> <span class="n">using</span> <span class="n">either</span> <span class="o">!</span>pip or !apt.
-
-<span class="n">To</span> <span class="n">view</span> <span class="n">examples</span> <span class="n">of</span> <span class="n">installing</span> <span class="n">some</span> <span class="n">common</span> <span class="n">dependencies</span><span class="p">,</span> <span class="n">click</span> <span class="n">the</span>
-<span class="s2">&quot;Open Examples&quot;</span> <span class="n">button</span> <span class="n">below</span><span class="o">.</span>
-<span class="gt">---------------------------------------------------------------------------</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
-
-<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span>
-                                                    <span class="n">y</span><span class="p">,</span>
-                                                    <span class="n">test_size</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span>
-                                                    <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Classification dengan DecisionTreeClassifier</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
-
-<span class="n">model</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">max_depth</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
-<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Visualisasi Model</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">tree</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;figure.dpi&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">85</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
-<span class="n">tree</span><span class="o">.</span><span class="n">plot_tree</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Evaluasi Model</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span>
-
-<span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
-
-<span class="nb">print</span> <span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-</section>
 
     <script type="text/x-thebe-config">
     {
@@ -783,20 +856,6 @@ menggunakan internal decision making logic. Hal ini tidak terdapat dapat pada je
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="Tugas-5.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><strong>Tugas 5 (K-Means)</strong></p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="UTS.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>UTS</strong></p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
 </div>
             </footer>
         </div>
